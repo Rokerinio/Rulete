@@ -1,0 +1,57 @@
+<html>
+<head>
+ <meta charset="utf-8">   
+ <title>Ruletka</title>   
+ <link rel="stylesheet" href="rul_styl.css" type="text/css">
+ <script src="rul_script.js"> </script>
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+    </style>
+</head>
+<body>
+
+<div id="glowna">
+        <h1>Witaj na ruletce , Powodzenia !</h1>
+        </div>
+
+<div id="pomoc"></div>        
+<div id="ruletka">
+    <input id="skrz1" class="button2" type="image" src="chest.jpg" onclick="wyg1()"></input> 
+    <input id="skrz2" class="button2" type="image" src="chest.jpg" onclick="wyg2()"></input> 
+    <input id="skrz3" class="button2" type="image" src="chest.jpg" onclick="wyg3()"></input>  
+    <br>
+    <input id="skrz4" class="button2" type="image" src="chest.jpg" onclick="wyg4()"></input> 
+    <input id="skrz5" class="button2" type="image" src="chest.jpg" onclick="wyg5()"></input> 
+    <input id="skrz6" class="button2" type="image" src="chest.jpg" onclick="wyg6()"></input> 
+    <br>
+    <input id="skrz7" class="button2" type="image" src="chest.jpg" onclick="wyg7()"></input> 
+    <input id="skrz8" class="button2" type="image" src="chest.jpg" onclick="wyg8()"></input> 
+    <input id="skrz9" class="button2" type="image" src="chest.jpg" onclick="wyg9()"></input> 
+
+</div>
+
+<div id="menu">
+    <form>
+        <h2> Wybierz Kwotę </h2> 
+        <br>
+        <input type="number" id="wyplata" disabled="disabled">
+        </form>
+        <br>
+        <div id="stank"> Twój stan konta to 10000 </div>
+        <br>
+
+        <button class="button" type="button" onclick="losuj()">Losuj</button>
+        <button class="button" type="button" onclick="clean()">Wyczyść</button>
+        <br>
+
+        <div> <button id="block1" class="blocks" onclick="box1()"> 100 $  </button> </div>
+        
+        <div> <button id="block2" class="blocks" onclick="box2()"> 1000 $  </button> </div>
+         
+        <div> <button id="block3" class="blocks" onclick="box3()"> 5000 $  </button> </div>
+</div>
+<div id="stopka">
+    .....
+</div>
+</body>    
+</html>
